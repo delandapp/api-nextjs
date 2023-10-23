@@ -1,7 +1,7 @@
-import {API } from "@/common/api"
+import {API} from "@/common/api"
 
 export async function getProducts(skip){
-    const data = await API.get(`/get-product?skip=${skip}`);
+    const data = await API.get(`/get-products?skip=${skip}`);
     return data;
 }
 
